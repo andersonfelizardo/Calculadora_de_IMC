@@ -1,0 +1,617 @@
+commit bf4c5b246ac7d6eec74099e4420af45d82afc966
+Author: andersonfelizardo <anderson.felizardo@live.com>
+Date:   Fri Apr 29 21:04:12 2022 +0100
+
+    First commit
+
+diff --git a/ios/Runner.xcodeproj/project.pbxproj b/ios/Runner.xcodeproj/project.pbxproj
+new file mode 100644
+index 0000000..efbe49c
+--- /dev/null
++++ b/ios/Runner.xcodeproj/project.pbxproj
+@@ -0,0 +1,481 @@
++// !$*UTF8*$!
++{
++	archiveVersion = 1;
++	classes = {
++	};
++	objectVersion = 50;
++	objects = {
++
++/* Begin PBXBuildFile section */
++		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
++		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
++		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
++		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
++		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
++		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
++/* End PBXBuildFile section */
++
++/* Begin PBXCopyFilesBuildPhase section */
++		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
++			isa = PBXCopyFilesBuildPhase;
++			buildActionMask = 2147483647;
++			dstPath = "";
++			dstSubfolderSpec = 10;
++			files = (
++			);
++			name = "Embed Frameworks";
++			runOnlyForDeploymentPostprocessing = 0;
++		};
++/* End PBXCopyFilesBuildPhase section */
++
++/* Begin PBXFileReference section */
++		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
++		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
++		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
++		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
++		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
++		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
++		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
++		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
++		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
++		97C146FB1CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
++		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
++		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
++		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
++/* End PBXFileReference section */
++
++/* Begin PBXFrameworksBuildPhase section */
++		97C146EB1CF9000F007C117D /* Frameworks */ = {
++			isa = PBXFrameworksBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++		};
++/* End PBXFrameworksBuildPhase section */
++
++/* Begin PBXGroup section */
++		9740EEB11CF90186004384FC /* Flutter */ = {
++			isa = PBXGroup;
++			children = (
++				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
++				9740EEB21CF90195004384FC /* Debug.xcconfig */,
++				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
++				9740EEB31CF90195004384FC /* Generated.xcconfig */,
++			);
++			name = Flutter;
++			sourceTree = "<group>";
++		};
++		97C146E51CF9000F007C117D = {
++			isa = PBXGroup;
++			children = (
++				9740EEB11CF90186004384FC /* Flutter */,
++				97C146F01CF9000F007C117D /* Runner */,
++				97C146EF1CF9000F007C117D /* Products */,
++			);
++			sourceTree = "<group>";
++		};
++		97C146EF1CF9000F007C117D /* Products */ = {
++			isa = PBXGroup;
++			children = (
++				97C146EE1CF9000F007C117D /* Runner.app */,
++			);
++			name = Products;
++			sourceTree = "<group>";
++		};
++		97C146F01CF9000F007C117D /* Runner */ = {
++			isa = PBXGroup;
++			children = (
++				97C146FA1CF9000F007C117D /* Main.storyboard */,
++				97C146FD1CF9000F007C117D /* Assets.xcassets */,
++				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
++				97C147021CF9000F007C117D /* Info.plist */,
++				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
++				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
++				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
++				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
++			);
++			path = Runner;
++			sourceTree = "<group>";
++		};
++/* End PBXGroup section */
++
++/* Begin PBXNativeTarget section */
++		97C146ED1CF9000F007C117D /* Runner */ = {
++			isa = PBXNativeTarget;
++			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
++			buildPhases = (
++				9740EEB61CF901F6004384FC /* Run Script */,
++				97C146EA1CF9000F007C117D /* Sources */,
++				97C146EB1CF9000F007C117D /* Frameworks */,
++				97C146EC1CF9000F007C117D /* Resources */,
++				9705A1C41CF9048500538489 /* Embed Frameworks */,
++				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
++			);
++			buildRules = (
++			);
++			dependencies = (
++			);
++			name = Runner;
++			productName = Runner;
++			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
++			productType = "com.apple.product-type.application";
++		};
++/* End PBXNativeTarget section */
++
++/* Begin PBXProject section */
++		97C146E61CF9000F007C117D /* Project object */ = {
++			isa = PBXProject;
++			attributes = {
++				LastUpgradeCheck = 1300;
++				ORGANIZATIONNAME = "";
++				TargetAttributes = {
++					97C146ED1CF9000F007C117D = {
++						CreatedOnToolsVersion = 7.3.1;
++						LastSwiftMigration = 1100;
++					};
++				};
++			};
++			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
++			compatibilityVersion = "Xcode 9.3";
++			developmentRegion = en;
++			hasScannedForEncodings = 0;
++			knownRegions = (
++				en,
++				Base,
++			);
++			mainGroup = 97C146E51CF9000F007C117D;
++			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
++			projectDirPath = "";
++			projectRoot = "";
++			targets = (
++				97C146ED1CF9000F007C117D /* Runner */,
++			);
++		};
++/* End PBXProject section */
++
++/* Begin PBXResourcesBuildPhase section */
++		97C146EC1CF9000F007C117D /* Resources */ = {
++			isa = PBXResourcesBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
++				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
++				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
++				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++		};
++/* End PBXResourcesBuildPhase section */
++
++/* Begin PBXShellScriptBuildPhase section */
++		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
++			isa = PBXShellScriptBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++			);
++			inputPaths = (
++			);
++			name = "Thin Binary";
++			outputPaths = (
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++			shellPath = /bin/sh;
++			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
++		};
++		9740EEB61CF901F6004384FC /* Run Script */ = {
++			isa = PBXShellScriptBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++			);
++			inputPaths = (
++			);
++			name = "Run Script";
++			outputPaths = (
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++			shellPath = /bin/sh;
++			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
++		};
++/* End PBXShellScriptBuildPhase section */
++
++/* Begin PBXSourcesBuildPhase section */
++		97C146EA1CF9000F007C117D /* Sources */ = {
++			isa = PBXSourcesBuildPhase;
++			buildActionMask = 2147483647;
++			files = (
++				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
++				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
++			);
++			runOnlyForDeploymentPostprocessing = 0;
++		};
++/* End PBXSourcesBuildPhase section */
++
++/* Begin PBXVariantGroup section */
++		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
++			isa = PBXVariantGroup;
++			children = (
++				97C146FB1CF9000F007C117D /* Base */,
++			);
++			name = Main.storyboard;
++			sourceTree = "<group>";
++		};
++		97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */ = {
++			isa = PBXVariantGroup;
++			children = (
++				97C147001CF9000F007C117D /* Base */,
++			);
++			name = LaunchScreen.storyboard;
++			sourceTree = "<group>";
++		};
++/* End PBXVariantGroup section */
++
++/* Begin XCBuildConfiguration section */
++		249021D3217E4FDB00AE95B9 /* Profile */ = {
++			isa = XCBuildConfiguration;
++			buildSettings = {
++				ALWAYS_SEARCH_USER_PATHS = NO;
++				CLANG_ANALYZER_NONNULL = YES;
++				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
++				CLANG_CXX_LIBRARY = "libc++";
++				CLANG_ENABLE_MODULES = YES;
++				CLANG_ENABLE_OBJC_ARC = YES;
++				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
++				CLANG_WARN_BOOL_CONVERSION = YES;
++				CLANG_WARN_COMMA = YES;
++				CLANG_WARN_CONSTANT_CONVERSION = YES;
++				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
++				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
++				CLANG_WARN_EMPTY_BODY = YES;
++				CLANG_WARN_ENUM_CONVERSION = YES;
++				CLANG_WARN_INFINITE_RECURSION = YES;
++				CLANG_WARN_INT_CONVERSION = YES;
++				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
++				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
++				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
++				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
++				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
++				CLANG_WARN_STRICT_PROTOTYPES = YES;
++				CLANG_WARN_SUSPICIOUS_MOVE = YES;
++				CLANG_WARN_UNREACHABLE_CODE = YES;
++				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
++				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
++				COPY_PHASE_STRIP = NO;
++				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
++				ENABLE_NS_ASSERTIONS = NO;
++				ENABLE_STRICT_OBJC_MSGSEND = YES;
++				GCC_C_LANGUAGE_STANDARD = gnu99;
++				GCC_NO_COMMON_BLOCKS = YES;
++				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
++				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
++				GCC_WARN_UNDECLARED_SELECTOR = YES;
++				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
++				GCC_WARN_UNUSED_FUNCTION = YES;
++				GCC_WARN_UNUSED_VARIABLE = YES;
++				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
++				MTL_ENABLE_DEBUG_INFO = NO;
++				SDKROOT = iphoneos;
++				SUPPORTED_PLATFORMS = iphoneos;
++				TARGETED_DEVICE_FAMILY = "1,2";
++				VALIDATE_PRODUCT = YES;
++			};
++			name = Profile;
++		};
++		249021D4217E4FDB00AE95B9 /* Profile */ = {
++			isa = XCBuildConfiguration;
++			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
++			buildSettings = {
++				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
++				CLANG_ENABLE_MODULES = YES;
++				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
++				ENABLE_BITCODE = NO;
++				INFOPLIST_FILE = Runner/Info.plist;
++				LD_RUNPATH_SEARCH_PATHS = (
++					"$(inherited)",
++					"@executable_path/Frameworks",
++				);
++				PRODUCT_BUNDLE_IDENTIFIER = com.example.calculadoraDeImc;
++				PRODUCT_NAME = "$(TARGET_NAME)";
++				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
++				SWIFT_VERSION = 5.0;
++				VERSIONING_SYSTEM = "apple-generic";
++			};
++			name = Profile;
++		};
++		97C147031CF9000F007C117D /* Debug */ = {
++			isa = XCBuildConfiguration;
++			buildSettings = {
++				ALWAYS_SEARCH_USER_PATHS = NO;
++				CLANG_ANALYZER_NONNULL = YES;
++				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
++				CLANG_CXX_LIBRARY = "libc++";
++				CLANG_ENABLE_MODULES = YES;
++				CLANG_ENABLE_OBJC_ARC = YES;
++				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
++				CLANG_WARN_BOOL_CONVERSION = YES;
++				CLANG_WARN_COMMA = YES;
++				CLANG_WARN_CONSTANT_CONVERSION = YES;
++				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
++				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
++				CLANG_WARN_EMPTY_BODY = YES;
++				CLANG_WARN_ENUM_CONVERSION = YES;
++				CLANG_WARN_INFINITE_RECURSION = YES;
++				CLANG_WARN_INT_CONVERSION = YES;
++				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
++				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
++				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
++				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
++				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
++				CLANG_WARN_STRICT_PROTOTYPES = YES;
++				CLANG_WARN_SUSPICIOUS_MOVE = YES;
++				CLANG_WARN_UNREACHABLE_CODE = YES;
++				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
++				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
++				COPY_PHASE_STRIP = NO;
++				DEBUG_INFORMATION_FORMAT = dwarf;
++				ENABLE_STRICT_OBJC_MSGSEND = YES;
++				ENABLE_TESTABILITY = YES;
++				GCC_C_LANGUAGE_STANDARD = gnu99;
++				GCC_DYNAMIC_NO_PIC = NO;
++				GCC_NO_COMMON_BLOCKS = YES;
++				GCC_OPTIMIZATION_LEVEL = 0;
++				GCC_PREPROCESSOR_DEFINITIONS = (
++					"DEBUG=1",
++					"$(inherited)",
++				);
++				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
++				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
++				GCC_WARN_UNDECLARED_SELECTOR = YES;
++				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
++				GCC_WARN_UNUSED_FUNCTION = YES;
++				GCC_WARN_UNUSED_VARIABLE = YES;
++				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
++				MTL_ENABLE_DEBUG_INFO = YES;
++				ONLY_ACTIVE_ARCH = YES;
++				SDKROOT = iphoneos;
++				TARGETED_DEVICE_FAMILY = "1,2";
++			};
++			name = Debug;
++		};
++		97C147041CF9000F007C117D /* Release */ = {
++			isa = XCBuildConfiguration;
++			buildSettings = {
++				ALWAYS_SEARCH_USER_PATHS = NO;
++				CLANG_ANALYZER_NONNULL = YES;
++				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
++				CLANG_CXX_LIBRARY = "libc++";
++				CLANG_ENABLE_MODULES = YES;
++				CLANG_ENABLE_OBJC_ARC = YES;
++				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
++				CLANG_WARN_BOOL_CONVERSION = YES;
++				CLANG_WARN_COMMA = YES;
++				CLANG_WARN_CONSTANT_CONVERSION = YES;
++				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
++				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
++				CLANG_WARN_EMPTY_BODY = YES;
++				CLANG_WARN_ENUM_CONVERSION = YES;
++				CLANG_WARN_INFINITE_RECURSION = YES;
++				CLANG_WARN_INT_CONVERSION = YES;
++				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
++				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
++				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
++				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
++				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
++				CLANG_WARN_STRICT_PROTOTYPES = YES;
++				CLANG_WARN_SUSPICIOUS_MOVE = YES;
++				CLANG_WARN_UNREACHABLE_CODE = YES;
++				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
++				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
++				COPY_PHASE_STRIP = NO;
++				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
++				ENABLE_NS_ASSERTIONS = NO;
++				ENABLE_STRICT_OBJC_MSGSEND = YES;
++				GCC_C_LANGUAGE_STANDARD = gnu99;
++				GCC_NO_COMMON_BLOCKS = YES;
++				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
++				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
++				GCC_WARN_UNDECLARED_SELECTOR = YES;
++				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
++				GCC_WARN_UNUSED_FUNCTION = YES;
++				GCC_WARN_UNUSED_VARIABLE = YES;
++				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
++				MTL_ENABLE_DEBUG_INFO = NO;
++				SDKROOT = iphoneos;
++				SUPPORTED_PLATFORMS = iphoneos;
++				SWIFT_COMPILATION_MODE = wholemodule;
++				SWIFT_OPTIMIZATION_LEVEL = "-O";
++				TARGETED_DEVICE_FAMILY = "1,2";
++				VALIDATE_PRODUCT = YES;
++			};
++			name = Release;
++		};
++		97C147061CF9000F007C117D /* Debug */ = {
++			isa = XCBuildConfiguration;
++			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
++			buildSettings = {
++				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
++				CLANG_ENABLE_MODULES = YES;
++				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
++				ENABLE_BITCODE = NO;
++				INFOPLIST_FILE = Runner/Info.plist;
++				LD_RUNPATH_SEARCH_PATHS = (
++					"$(inherited)",
++					"@executable_path/Frameworks",
++				);
++				PRODUCT_BUNDLE_IDENTIFIER = com.example.calculadoraDeImc;
++				PRODUCT_NAME = "$(TARGET_NAME)";
++				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
++				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
++				SWIFT_VERSION = 5.0;
++				VERSIONING_SYSTEM = "apple-generic";
++			};
++			name = Debug;
++		};
++		97C147071CF9000F007C117D /* Release */ = {
++			isa = XCBuildConfiguration;
++			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
++			buildSettings = {
++				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
++				CLANG_ENABLE_MODULES = YES;
++				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
++				ENABLE_BITCODE = NO;
++				INFOPLIST_FILE = Runner/Info.plist;
++				LD_RUNPATH_SEARCH_PATHS = (
++					"$(inherited)",
++					"@executable_path/Frameworks",
++				);
++				PRODUCT_BUNDLE_IDENTIFIER = com.example.calculadoraDeImc;
++				PRODUCT_NAME = "$(TARGET_NAME)";
++				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
++				SWIFT_VERSION = 5.0;
++				VERSIONING_SYSTEM = "apple-generic";
++			};
++			name = Release;
++		};
++/* End XCBuildConfiguration section */
++
++/* Begin XCConfigurationList section */
++		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
++			isa = XCConfigurationList;
++			buildConfigurations = (
++				97C147031CF9000F007C117D /* Debug */,
++				97C147041CF9000F007C117D /* Release */,
++				249021D3217E4FDB00AE95B9 /* Profile */,
++			);
++			defaultConfigurationIsVisible = 0;
++			defaultConfigurationName = Release;
++		};
++		97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */ = {
++			isa = XCConfigurationList;
++			buildConfigurations = (
++				97C147061CF9000F007C117D /* Debug */,
++				97C147071CF9000F007C117D /* Release */,
++				249021D4217E4FDB00AE95B9 /* Profile */,
++			);
++			defaultConfigurationIsVisible = 0;
++			defaultConfigurationName = Release;
++		};
++/* End XCConfigurationList section */
++	};
++	rootObject = 97C146E61CF9000F007C117D /* Project object */;
++}
+diff --git a/windows/CMakeLists.txt b/windows/CMakeLists.txt
+new file mode 100644
+index 0000000..0b652bc
+--- /dev/null
++++ b/windows/CMakeLists.txt
+@@ -0,0 +1,95 @@
++cmake_minimum_required(VERSION 3.14)
++project(calculadora_de_imc LANGUAGES CXX)
++
++set(BINARY_NAME "calculadora_de_imc")
++
++cmake_policy(SET CMP0063 NEW)
++
++set(CMAKE_INSTALL_RPATH "$ORIGIN/lib")
++
++# Configure build options.
++get_property(IS_MULTICONFIG GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
++if(IS_MULTICONFIG)
++  set(CMAKE_CONFIGURATION_TYPES "Debug;Profile;Release"
++    CACHE STRING "" FORCE)
++else()
++  if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
++    set(CMAKE_BUILD_TYPE "Debug" CACHE
++      STRING "Flutter build mode" FORCE)
++    set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS
++      "Debug" "Profile" "Release")
++  endif()
++endif()
++
++set(CMAKE_EXE_LINKER_FLAGS_PROFILE "${CMAKE_EXE_LINKER_FLAGS_RELEASE}")
++set(CMAKE_SHARED_LINKER_FLAGS_PROFILE "${CMAKE_SHARED_LINKER_FLAGS_RELEASE}")
++set(CMAKE_C_FLAGS_PROFILE "${CMAKE_C_FLAGS_RELEASE}")
++set(CMAKE_CXX_FLAGS_PROFILE "${CMAKE_CXX_FLAGS_RELEASE}")
++
++# Use Unicode for all projects.
++add_definitions(-DUNICODE -D_UNICODE)
++
++# Compilation settings that should be applied to most targets.
++function(APPLY_STANDARD_SETTINGS TARGET)
++  target_compile_features(${TARGET} PUBLIC cxx_std_17)
++  target_compile_options(${TARGET} PRIVATE /W4 /WX /wd"4100")
++  target_compile_options(${TARGET} PRIVATE /EHsc)
++  target_compile_definitions(${TARGET} PRIVATE "_HAS_EXCEPTIONS=0")
++  target_compile_definitions(${TARGET} PRIVATE "$<$<CONFIG:Debug>:_DEBUG>")
++endfunction()
++
++set(FLUTTER_MANAGED_DIR "${CMAKE_CURRENT_SOURCE_DIR}/flutter")
++
++# Flutter library and tool build rules.
++add_subdirectory(${FLUTTER_MANAGED_DIR})
++
++# Application build
++add_subdirectory("runner")
++
++# Generated plugin build rules, which manage building the plugins and adding
++# them to the application.
++include(flutter/generated_plugins.cmake)
++
++
++# === Installation ===
++# Support files are copied into place next to the executable, so that it can
++# run in place. This is done instead of making a separate bundle (as on Linux)
++# so that building and running from within Visual Studio will work.
++set(BUILD_BUNDLE_DIR "$<TARGET_FILE_DIR:${BINARY_NAME}>")
++# Make the "install" step default, as it's required to run.
++set(CMAKE_VS_INCLUDE_INSTALL_TO_DEFAULT_BUILD 1)
++if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
++  set(CMAKE_INSTALL_PREFIX "${BUILD_BUNDLE_DIR}" CACHE PATH "..." FORCE)
++endif()
++
++set(INSTALL_BUNDLE_DATA_DIR "${CMAKE_INSTALL_PREFIX}/data")
++set(INSTALL_BUNDLE_LIB_DIR "${CMAKE_INSTALL_PREFIX}")
++
++install(TARGETS ${BINARY_NAME} RUNTIME DESTINATION "${CMAKE_INSTALL_PREFIX}"
++  COMPONENT Runtime)
++
++install(FILES "${FLUTTER_ICU_DATA_FILE}" DESTINATION "${INSTALL_BUNDLE_DATA_DIR}"
++  COMPONENT Runtime)
++
++install(FILES "${FLUTTER_LIBRARY}" DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
++  COMPONENT Runtime)
++
++if(PLUGIN_BUNDLED_LIBRARIES)
++  install(FILES "${PLUGIN_BUNDLED_LIBRARIES}"
++    DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
++    COMPONENT Runtime)
++endif()
++
++# Fully re-copy the assets directory on each build to avoid having stale files
++# from a previous install.
++set(FLUTTER_ASSET_DIR_NAME "flutter_assets")
++install(CODE "
++  file(REMOVE_RECURSE \"${INSTALL_BUNDLE_DATA_DIR}/${FLUTTER_ASSET_DIR_NAME}\")
++  " COMPONENT Runtime)
++install(DIRECTORY "${PROJECT_BUILD_DIR}/${FLUTTER_ASSET_DIR_NAME}"
++  DESTINATION "${INSTALL_BUNDLE_DATA_DIR}" COMPONENT Runtime)
++
++# Install the AOT library on non-Debug builds only.
++install(FILES "${AOT_LIBRARY}" DESTINATION "${INSTALL_BUNDLE_DATA_DIR}"
++  CONFIGURATIONS Profile;Release
++  COMPONENT Runtime)
+diff --git a/windows/runner/CMakeLists.txt b/windows/runner/CMakeLists.txt
+new file mode 100644
+index 0000000..de2d891
+--- /dev/null
++++ b/windows/runner/CMakeLists.txt
+@@ -0,0 +1,17 @@
++cmake_minimum_required(VERSION 3.14)
++project(runner LANGUAGES CXX)
++
++add_executable(${BINARY_NAME} WIN32
++  "flutter_window.cpp"
++  "main.cpp"
++  "utils.cpp"
++  "win32_window.cpp"
++  "${FLUTTER_MANAGED_DIR}/generated_plugin_registrant.cc"
++  "Runner.rc"
++  "runner.exe.manifest"
++)
++apply_standard_settings(${BINARY_NAME})
++target_compile_definitions(${BINARY_NAME} PRIVATE "NOMINMAX")
++target_link_libraries(${BINARY_NAME} PRIVATE flutter flutter_wrapper_app)
++target_include_directories(${BINARY_NAME} PRIVATE "${CMAKE_SOURCE_DIR}")
++add_dependencies(${BINARY_NAME} flutter_assemble)
